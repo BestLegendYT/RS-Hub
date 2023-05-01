@@ -32,8 +32,8 @@ ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Frame.Position = UDim2.new(0.201952904, 0, 0.281844199, 0)
-Frame.Size = UDim2.new(0.594676793, 0, 0.436023951, 0)
+Frame.Position = UDim2.new(0.20195289, 0, 0.281844169, 0)
+Frame.Size = UDim2.new(0.714653969, 0, 0.54223609, 0)
 
 UICorner.Parent = Frame
 
@@ -157,7 +157,7 @@ UICorner_8.Parent = TextButton_6
 
 -- Scripts:
 
-local function XBNFGF_fake_script() -- Frame.LocalScript 
+local function RWNOW_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService('UserInputService')
@@ -195,8 +195,8 @@ local function XBNFGF_fake_script() -- Frame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(XBNFGF_fake_script)()
-local function GBYY_fake_script() -- ImageLabel.LocalScript 
+coroutine.wrap(RWNOW_fake_script)()
+local function UEPUQ_fake_script() -- ImageLabel.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	local Players = game:GetService("Players")
@@ -206,8 +206,8 @@ local function GBYY_fake_script() -- ImageLabel.LocalScript
 	
 	
 end
-coroutine.wrap(GBYY_fake_script)()
-local function UYDA_fake_script() -- TextLabel_2.LocalScript 
+coroutine.wrap(UEPUQ_fake_script)()
+local function YAJYKN_fake_script() -- TextLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	local player = game.Players.LocalPlayer
@@ -216,16 +216,16 @@ local function UYDA_fake_script() -- TextLabel_2.LocalScript
 		script.Parent.Text = "مرحبا       "..player.Name.." شكرا   لأستخدامك           FQ Hub"
 	end
 end
-coroutine.wrap(UYDA_fake_script)()
-local function TWWBQK_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(YAJYKN_fake_script)()
+local function ZEPU_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		setclipboard("https://discord.gg/r4QKbZhVgT")
 	end)
 end
-coroutine.wrap(TWWBQK_fake_script)()
-local function DHLQK_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(ZEPU_fake_script)()
+local function YYCQO_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGui = script.Parent
@@ -236,4 +236,4 @@ local function DHLQK_fake_script() -- ScreenGui.LocalScript
 		Frame.Visible = not Frame.Visible
 	end)
 end
-coroutine.wrap(DHLQK_fake_script)()
+coroutine.wrap(YYCQO_fake_script)()
