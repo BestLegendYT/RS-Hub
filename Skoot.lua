@@ -3,6 +3,7 @@
 
 -- Instances:
 
+local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local ScrollingFrame = Instance.new("ScrollingFrame")
@@ -22,10 +23,14 @@ local ImageLabel = Instance.new("ImageLabel")
 local TextLabel_2 = Instance.new("TextLabel")
 local TextButton_5 = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
+local TextButton_6 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
 
 --Properties:
 
-Frame.Parent = game.StarterGui.ScreenGui
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Frame.Position = UDim2.new(0.201952904, 0, 0.281844199, 0)
 Frame.Size = UDim2.new(0.594676793, 0, 0.436023951, 0)
@@ -137,9 +142,22 @@ TextButton_5.TextSize = 14.000
 
 UICorner_7.Parent = TextButton_5
 
+TextButton_6.Parent = ScreenGui
+TextButton_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.Position = UDim2.new(0.949526191, 0, 0.167152882, 0)
+TextButton_6.Size = UDim2.new(0.0502069853, 0, 0.124705881, 0)
+TextButton_6.Font = Enum.Font.SourceSans
+TextButton_6.Text = "فتح            /اغلاق"
+TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_6.TextSize = 14.000
+TextButton_6.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(1, 8)
+UICorner_8.Parent = TextButton_6
+
 -- Scripts:
 
-local function ZQOEKL_fake_script() -- Frame.LocalScript 
+local function XBNFGF_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService('UserInputService')
@@ -177,8 +195,8 @@ local function ZQOEKL_fake_script() -- Frame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ZQOEKL_fake_script)()
-local function XRLUS_fake_script() -- ImageLabel.LocalScript 
+coroutine.wrap(XBNFGF_fake_script)()
+local function GBYY_fake_script() -- ImageLabel.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	local Players = game:GetService("Players")
@@ -188,8 +206,8 @@ local function XRLUS_fake_script() -- ImageLabel.LocalScript
 	
 	
 end
-coroutine.wrap(XRLUS_fake_script)()
-local function HKFX_fake_script() -- TextLabel_2.LocalScript 
+coroutine.wrap(GBYY_fake_script)()
+local function UYDA_fake_script() -- TextLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	local player = game.Players.LocalPlayer
@@ -198,12 +216,24 @@ local function HKFX_fake_script() -- TextLabel_2.LocalScript
 		script.Parent.Text = "مرحبا       "..player.Name.." شكرا   لأستخدامك           FQ Hub"
 	end
 end
-coroutine.wrap(HKFX_fake_script)()
-local function MCYEW_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(UYDA_fake_script)()
+local function TWWBQK_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		setclipboard("https://discord.gg/r4QKbZhVgT")
 	end)
 end
-coroutine.wrap(MCYEW_fake_script)()
+coroutine.wrap(TWWBQK_fake_script)()
+local function DHLQK_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local SGui = script.Parent
+	local Frame = SGui:WaitForChild("Frame")
+	local Button = SGui:WaitForChild("TextButton")
+	
+	Button.MouseButton1Up:Connect(function()
+		Frame.Visible = not Frame.Visible
+	end)
+end
+coroutine.wrap(DHLQK_fake_script)()
