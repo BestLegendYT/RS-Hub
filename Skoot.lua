@@ -5,7 +5,7 @@
 
 local Frame = Instance.new("Frame")
 local ScrollingFrame = Instance.new("ScrollingFrame")
-local Fly = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
 local UICorner_2 = Instance.new("UICorner")
 
@@ -23,24 +23,22 @@ ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame.Position = UDim2.new(0.0233035479, 0, 0.0392260477, 0)
 ScrollingFrame.Size = UDim2.new(0.959390104, 0, 0.906629503, 0)
 
-Fly.Name = "Fly"
-Fly.Parent = ScrollingFrame
-Fly.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Fly.Position = UDim2.new(0.0182186235, 0, 0.0172198527, 0)
-Fly.Size = UDim2.new(0, 138, 0, 31)
-Fly.Font = Enum.Font.SourceSans
-Fly.Text = "سكريت طيران"
-Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
-Fly.TextSize = 14.000
+TextButton.Parent = ScrollingFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(0.0182186235, 0, 0.0172198527, 0)
+TextButton.Size = UDim2.new(0, 138, 0, 31)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "سكريت طيران"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
 
-
-UICorner.Parent = Fly
+UICorner.Parent = TextButton
 
 UICorner_2.Parent = Frame
 
 -- Scripts:
 
-local function NAII_fake_script() -- Frame.LocalScript 
+local function IAKUQP_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService('UserInputService')
@@ -78,4 +76,4 @@ local function NAII_fake_script() -- Frame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(NAII_fake_script)()
+coroutine.wrap(IAKUQP_fake_script)()
