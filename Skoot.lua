@@ -28,7 +28,6 @@ TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.Position = UDim2.new(0.0182186235, 0, 0.0172198527, 0)
 TextButton.Size = UDim2.new(0, 138, 0, 31)
 TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "سكريت طيران"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 14.000
 
@@ -38,7 +37,7 @@ UICorner_2.Parent = Frame
 
 -- Scripts:
 
-local function IAKUQP_fake_script() -- Frame.LocalScript 
+local function YBLESIY_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService('UserInputService')
@@ -76,4 +75,4 @@ local function IAKUQP_fake_script() -- Frame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(IAKUQP_fake_script)()
+coroutine.wrap(YBLESIY_fake_script)()
