@@ -203,7 +203,7 @@ local function MCYEW_fake_script() -- TextButton_5.LocalScript
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		setclipboard(https://discord.gg/r4QKbZhVgT)
+		setclipboard("https://discord.gg/r4QKbZhVgT")
 	end)
 end
 coroutine.wrap(MCYEW_fake_script)()
